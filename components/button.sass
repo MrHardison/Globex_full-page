@@ -1,0 +1,49 @@
+.btn
+  align-items: center
+  border: 0
+  box-sizing: border-box
+  border-radius: 30px
+  color: #fff
+  cursor: pointer
+  display: inline-flex
+  font: 16px/46px $MRegular
+  height: 46px
+  margin: 0
+  min-width: 188px
+  outline: 0
+  position: relative
+  padding: 0
+  transition: box-shadow .3s
+  text-align: center
+  justify-content: center
+
+  &_blue
+    background: $blue
+
+    &:hover
+      box-shadow: 0 20px 70px -10px rgba($blue,.5)
+
+  &_red
+    background: $red
+    justify-content: center
+
+    &:hover
+      box-shadow: 0 20px 70px -10px rgba($red,.5)
+
+    &::before
+      background: url('/img/play.svg') center no-repeat
+      content: ''
+      display: inline
+      height: 14px
+      margin-right: 16px
+      width: 11px
+
+  @media(max-width: 1550px)
+    font: 16px/40px $MRegular
+    height: 40px
+    min-width: 170px
+
+  @media(max-width: 1023px)
+    font: 14px/46px $MRegular
+    height: 46px
+    min-width: 240px

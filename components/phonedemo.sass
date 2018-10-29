@@ -1,0 +1,55 @@
+.mockup
+  background: #fff
+  border-radius: 45px
+  box-shadow: 0 0 70px 0 #e5e7e9, 0 20px 20px 0 rgba(#000,.0), inset 0 -8px 20px 0 rgba(#000,.05)
+  box-sizing: border-box
+  object-fit: contain
+  overflow: hidden
+
+  &__img
+    height: auto
+    max-width: 100%
+
+  &_big
+    border-radius: 45px
+    height: 605px
+    padding: 19px
+    width: 300px
+
+    &-centered
+      box-shadow: -40px 40px 70px 0 rgba(0,0,0,.1), 0 20px 20px 0 rgba(0, 0, 0, 0), inset 0 -8px 20px 0 rgba(0, 0, 0, 0.05)
+
+    img
+      border-radius: 45px  
+
+    @media(max-width: 1550px)
+      height: 454px
+      padding: 14px
+      width: 225px
+
+    @media(max-width: 1023px)
+      box-shadow: 0 0 70px 0 #d1d7dc, 0 20px 20px 0 rgba(0, 0, 0, 0), inset 0 -8px 20px 0 rgba(0, 0, 0, 0.05)
+      height: 484px
+      padding: 15px
+      width: 240px
+
+  &_small
+    box-shadow: 0 20px 70px 0 rgba(0,0,0,.1), 0 10px 10px 0 rgba(0, 0, 0, 0), inset 0 -8px 20px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 35px
+    height: 403px
+    padding: 12.5px
+    width: 200px
+
+    img
+      border-radius: 22px
+
+    @media(max-width: 1550px)
+      height: 300px 
+      padding: 9.5px
+      width: 150px
+
+    @media(max-width: 1023px)
+      box-shadow: 0 0 70px 0 #d1d7dc, 0 20px 20px 0 rgba(0, 0, 0, 0), inset 0 -8px 20px 0 rgba(0, 0, 0, 0.05)
+      height: 484px
+      padding: 15px
+      width: 240px

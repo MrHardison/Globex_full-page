@@ -1,0 +1,127 @@
+// Variables
+$MRegular: Montserrat-Regular
+$MBold: Montserrat-Bold
+$MBlack: Montserrat-Black
+$MLight: Montserrat-Light
+$MMedium: Montserrat-Medium
+$Avenir: Avenir
+
+// Colors
+$blue: #2196f3
+$blue-medium: #2296f3
+$red: #ff1c4c
+$grey: #717a82
+$grey-light: #cbdcea
+$grey-xlight: #e0e0e0
+
+html
+  font-size: 16px
+  min-height: 100%
+
+body
+  font-family: $MRegular
+  height: 100%
+  margin: 0
+  padding: 0
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+p
+  padding: 0
+  margin: 0
+
+a
+  text-decoration: none
+
+.container
+  height: 100vh
+  overflow: hidden
+  position: relative
+  text-align: center
+
+  &_mobile
+    height: 100%
+
+h1.h1, h2.h2
+  color: #000
+  font: 36px/48px $MRegular
+  letter-spacing: -.8px
+  margin: 0
+  text-align: left
+
+  @media(max-width: 1550px)
+    font: 28px/38px $MRegular
+
+  @media(max-width: 1023px)
+    font: 24px/40px $MRegular
+    letter-spacing: -.5px
+    margin: 0 auto
+    text-align: center
+
+h3.h3
+  color: #000
+  font: 24px/36px $Avenir
+  margin: 0
+  letter-spacing: .2px
+  text-align: left
+
+  @media(max-width: 1550px)
+    font: 20px/28px $MRegular
+
+  @media(max-width: 1023px)
+    font: 24px/40px $MRegular
+    letter-spacing: .5px
+    margin: 0 auto
+    text-align: center
+
+.text
+  color: $grey
+  font: 16px/32px $Avenir
+  text-align: left
+
+  &__highlight
+    background: rgba(#2196f3,.1)
+    border-radius: 11.5px
+    padding: 0 5px
+
+  @media(max-width: 1023px)
+    margin: 0 auto
+    text-align: center
+
+    &_sm
+      color: #a3afbc
+      font: 12px/18px $MRegular
+      letter-spacing: .2px
+      width: 100% !important
+
+.input-box
+  width: 386px
+
+  &__input
+    background: transparent
+    border: 0
+    border-bottom: 1px solid $grey-xlight
+    color: $grey
+    cursor: text
+    font: 22px/32px $Avenir
+    height: 32px
+    outline: 0
+    width: 100%
+
+    &::placeholder
+      font: 22px/32px $Avenir
+      color: rgba($grey, .2)
+
+  @media(max-width: 1023px)
+    margin: 0 auto
+    width: 300px
+
+    &__input
+      border-bottom: none
+      text-align: center
+
+      &::placeholder
+        text-align: center

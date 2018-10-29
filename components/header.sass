@@ -1,0 +1,84 @@
+.header
+  align-items: center
+  box-sizing: border-box
+  display: flex
+  padding: 36px 27px 0 100px
+  position: fixed
+  justify-content: space-between
+  width: 100%
+  z-index: 2
+
+  &__inner
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+    .slogan
+      margin-left: 33px
+
+    .btn
+      margin-right: 10px
+
+      &:nth-child(2)
+        margin-right: 21px
+
+    &_end
+      align-items: normal
+      justify-content: flex-end
+
+      .btns-block
+        position: relative
+        transition: opacity .5s ease-out
+        opacity: 0
+        z-index: -1
+
+        &.visible
+          opacity: 1
+          z-index: 2
+
+  @media(max-width: 1550px)
+    padding-left: 27px
+
+  @media(max-width: 1023px)
+    margin-bottom: 42px
+    padding: 44px 0 0 0
+    position: relative
+    width: 100%
+
+    &__inner
+      margin-top: 23px
+      padding-left: 23px
+      justify-content: flex-start
+
+      .slogan
+        align-items: center
+        background: $blue-medium
+        display: flex
+        height: 44px
+        left: 50%
+        margin: 0
+        position: absolute
+        transform: translateX(-50%)
+        top: 0
+        justify-content: center
+        width: 100%
+
+        &::before
+          display: none
+
+        &__text
+          color: #fff
+
+          &_colored
+            color: #fff
+
+      .logo
+        height: 27px
+        width: 100px
+
+      &_end
+        padding: 0 16px 0 0
+        align-items: center
+
+        .btns-block
+          display: none

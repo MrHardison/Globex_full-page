@@ -1,0 +1,125 @@
+.footer
+  bottom: 0
+  box-sizing: border-box
+  height: 130px
+  display: flex
+  left: 0
+  position: absolute
+  padding: 0 3% 25px 12%
+  justify-content: space-between
+  width: 100% 
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 50%
+
+    &:last-child
+      align-items: flex-end
+
+  &__links
+    display: flex
+    justify-content: flex-start
+
+    &:last-of-type
+      li
+        margin-right: 22px
+
+    li
+      margin-right: 47px
+
+      &:last-child
+        margin-right: 0
+
+  &__link
+    color: #fff
+    font: 16px/30px $MLight
+    
+    &_min
+      color: #fff
+      font-size: 12px
+      margin-right: 15px
+
+  &__socials
+    letter-spacing: -0.3em
+    
+    a
+      display: inline-block
+      letter-spacing: normal
+      transition: opacity .5s ease-out
+      margin-right: 10px
+
+      &:hover
+        opacity: .4
+
+      &:last-child
+        margin-right: 0
+        
+  &__copy
+    color: #fff
+    font-size: 12px
+
+  @media(max-width: 1550px)
+    height: 90px
+    padding-left: 3%
+    padding-bottom: 10px
+
+  @media(max-width: 1023px)
+    background: url('/img/footer_mobile.svg') center bottom no-repeat
+    bottom: auto
+    display: block
+    height: 446px
+    left: auto
+    position: static
+    padding: 60px 0 34px 0
+    transform: translateX(0)
+
+    &__wrap
+      display: flex
+      flex-direction: row
+      justify-content: center
+      width: 100%
+      
+      &:last-child
+        display: block
+        text-align: center
+        margin-top: 54px
+
+    &__links
+      display: inline-block
+      vertical-align: top
+
+      &:first-child
+        margin-right: 48px
+
+      &:last-of-type
+        li
+          margin-right: 0
+
+      li
+        display: block
+        margin-right: 0
+
+    &__link
+      display: block
+      font: 16px/48px $MLight
+
+      &_min
+        line-height: 48px
+        margin-right: 0
+        white-space: nowrap
+
+    &__socials
+      a
+        display: inline-block
+        margin-right: 10px
+
+        &:last-child
+          margin-right: 0
+          
+    &__copy
+      display: block
+      font: 12px/32px $MLight
+      letter-spacing: .2px
+      margin-top: 40px

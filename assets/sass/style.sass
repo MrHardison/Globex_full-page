@@ -1,0 +1,387 @@
+.desktop
+  .mouse
+    background: rgba(#fff, .2)
+    border: 1px solid #fff
+    border-radius: 15px
+    bottom: 32px
+    box-sizing: border-box
+    height: 45px
+    left: 50%
+    position: fixed
+    transition: transform .5s ease-out
+    transform: translateX(-50%)
+    width: 30px
+    z-index: 2
+
+    &.hidden
+      transform: translate(-50%, 200%)
+
+    &__scroll
+      background: #fff
+      border-radius: 15px
+      height: 9px
+      left: 50%
+      position: absolute
+      top: 10px
+      transform: translateX(-50%)
+      width: 4px
+
+  .slogan
+    margin-left: 20px
+    align-items: center
+    background: rgba($grey-light, .4)
+    border-radius: 5px
+    box-sizing: border-box
+    display: flex
+    height: 36px
+    padding: 9px 10px
+    position: relative
+
+    &::before
+      border-top: 4px solid transparent
+      border-right: 8px solid rgba($grey-light, .4)
+      border-bottom: 4px solid transparent
+      content: ''
+      height: 0
+      left: -8px
+      position: absolute
+      transform: translateY(-50%)
+      top: 50%
+      width: 0
+
+    &__text
+      color: #000
+      font: 16px/14px $Avenir
+
+      &_colored
+        color: $blue
+
+  .screen
+    overflow: hidden
+    
+    .container
+      align-items: center
+      display: flex
+      justify-content: center
+      box-sizing: border-box
+
+    .text
+      margin-top: 60px
+
+      @media(max-width: 1550px)
+        margin-top: 30px
+
+    &__info
+      transition: opacity .5s
+
+      &_intro
+        margin: 0 158px 0 0
+        width: 470px
+
+        .text
+          margin-top: 60px
+
+      &_unified
+        margin: -180px 0 0 120px
+        width: 390px
+
+        @media(max-width: 1550px)
+          margin: 0 0 0 90px
+          width: 300px
+
+      &_transfers
+        margin: -110px 80px 0 0
+        width: 385px
+
+        @media(max-width: 1550px)
+          margin: 0 60px 0 0
+          width: 340px
+        
+      &_cards
+        margin: -100px 0 0 255px
+        width: 380px
+
+        @media(max-width: 1550px)
+          margin: 0 0 0 190px
+          width: 340px
+
+      &_services
+        margin: -110px 120px 0 0
+        width: 385px
+
+        .h1
+          width: 300px
+
+        .text
+          width: 340px
+
+        @media(max-width: 1550px)
+          margin: 0 90px 0 0
+          width: 320px
+
+      &_merchant
+        margin: -150px 0 0 180px
+        width: 325px
+
+        .text
+          width: 305px
+
+        @media(max-width: 1550px)
+          margin: 0 0 0 130px
+    
+    &__intro
+      &__mockup
+        box-shadow: 0 0 70px -10px #e5e7e9, 0 20px 20px 0 rgba(0, 0, 0, 0), inset 0 -8px 20px 0 rgba(0, 0, 0, 0.05)
+        margin-top: 125px
+
+        @media(max-width: 1550px)
+          margin-top: 0
+
+    &__cards
+      .screen__cards-wrap
+        margin-top: 190px
+
+    &__mockups
+      align-items: center
+      display: inline-flex
+      vertical-align: middle
+
+      .mockup_big
+        margin: 0 20px
+
+        @media(max-width: 1550px)
+          margin: 0 10px
+
+    &__cards-wrap
+      height: 585px
+      display: inline-flex
+      position: relative
+      vertical-align: top
+      width: 580px
+
+      .card-block    
+        position: absolute
+    
+        img
+          height: auto
+          max-width: 100%
+
+        &_1
+          bottom: 0
+          height: 493px
+          left: 0
+          width: 395px
+          z-index: 2
+
+        &_2
+          height: 460px
+          right: 0
+          top: 0
+          width: 351px
+          z-index: 1
+
+      @media(max-width: 1550px)
+        height: 440px 
+        width: 435px
+
+        .card-block
+          &_1
+            height: 370px 
+            width: 295px
+
+          &_2
+            height: 345px 
+            width: 263px
+
+    &__image-wrap
+      display: inline-flex
+      height: 555px
+      vertical-align: top
+      width: 725px
+
+      img
+        height: auto
+        max-width: 100%
+
+      @media(max-width: 1550px)
+        height: 416px
+        width: 544px
+
+    &__buttons
+      align-items: center
+      display: flex
+      margin-top: 24px
+      justify-content: flex-start
+
+      .btn
+        &:first-child
+          margin-right: 12px
+
+    &__links
+      bottom: 32px
+      display: inline-flex
+      position: absolute
+      right: 45px
+
+      .item
+        &:last-child
+          margin-left: 4px
+
+    .h3
+      margin-top: 40px
+
+    &__form
+      margin-top: 30px
+
+.mobile
+  width: 100%
+
+  .mouse
+    display: none
+  
+  .container_mobile
+    margin: 0 auto
+    max-width: 400px
+
+    .screen
+      margin-bottom: 65px
+      overflow: auto
+      text-align: center
+
+      &:last-child
+        margin-bottom: 80px
+
+      &__info
+        margin: 0 auto
+        text-align: center
+
+        .h1
+          margin-bottom: 24px
+
+        .text_sm
+          margin: 60px 0 -25px 0
+          position: relative
+          z-index: 2
+
+        &_intro
+          margin-bottom: 56px
+
+          .h1
+            width: 290px
+
+          .text
+            width: 290px
+
+        &_unified
+          .h1
+            width: 290px
+
+          .text
+            width: 300px
+
+        &_transfers
+          .h1
+            width: 265px
+
+          .text
+            width: 305px
+
+        &_cards
+          .h1
+            width: 290px
+
+          .text
+            margin-bottom: 45px
+            width: 290px
+
+        &_services
+          .h1
+            width: 225px
+
+          .text
+            width: 305px
+
+      &__merchant
+        padding-bottom: 40px
+
+        .text
+          margin-bottom: 60px
+          width: 290px
+
+      &__intro
+        padding-bottom: 50px
+        margin-bottom: 40px
+
+        &__mockup
+          margin: 0 auto
+          margin-bottom: 40px
+
+        .screen__buttons
+          margin-bottom: 95px
+
+          &:last-child
+            margin-bottom: 0
+
+        .h3
+          margin: 0 auto
+          margin-bottom: 40px
+          width: 270px
+
+        .input-box
+          margin-bottom: 40px
+
+      &__mockups
+        margin: 0 auto
+        padding-bottom: 45px
+        text-align: center
+
+        .swiper-container
+          padding: 50px 0
+
+          .swiper-pagination-bullets
+            bottom: 0
+
+            .swiper-pagination-bullet
+              margin: 0 8px
+
+        .mockup
+          margin: 0 auto
+
+      &__cards-wrap
+        height: 352px
+        margin: 0 auto
+        position: relative
+        width: 300px
+
+        .card-block
+          position: absolute
+
+          img
+            height: auto
+            max-width: 100%
+
+          &_1
+            top: 50px
+            height: 301px
+            left: -53px
+            width: 239px
+            z-index: 2
+
+          &_2
+            height: 280px
+            right: 0
+            top: 0
+            width: 214px
+            z-index: 1
+
+      &__image-wrap
+        border-radius: 10px
+        box-shadow: 0 0 70px 0 rgba(3, 31, 74, 0.15)
+        height: 205px
+        margin: 0 auto
+        overflow: hidden
+        width: 289px
+        
+        img
+          height: auto
+          max-width: 100%
